@@ -8,6 +8,7 @@ body {
   }
      
   #guess-input {
+    text-align: center;
     display: block;
     margin: 0 auto 20px;
     padding: 10px;
@@ -25,12 +26,19 @@ body {
     color: #fff;
     border: none;
     border-radius: 3px;
+    margin-bottom: 20px;
+    text-align: center;
   }
      
   button:active {
       transform: scale(0.95);
   }
-     
+ 
+  #guess-button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
   .letter {
       border: 1px solid black;
       padding: 3px;
@@ -41,9 +49,11 @@ body {
   }
      
   .row{
+      text-align: center;
       margin-bottom: 10px;
   }
      
   .input-area{
       margin: 30px;
   }
+  
